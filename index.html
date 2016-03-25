@@ -15,7 +15,8 @@
 <script src="jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.js"></script>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
 <style>
 body {
 background-image: url("header.png");
@@ -85,7 +86,7 @@ color: gray;
 <title>Adam Nicol Design</title>
 
 </head>
-<body>
+<body ng-controller="MainCtrl">
 
 <div class="row">
 <div class="col-lg-1"></div>
@@ -134,9 +135,9 @@ color: gray;
 </div>
 <div class="col-lg-3"></div>
 </div>
-<a href="testingpartial.html">Partial test</a>
 
 
+<div ng-view></div>
 
 
 

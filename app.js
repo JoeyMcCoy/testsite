@@ -1,8 +1,7 @@
 angular.module('portfolio', []).
 	config(function($routeProvider){
 		$routeProvider.
-			when('/1',{template:'partial.html'}).
-			otherwise({redirectTo:'/',template:'testingpartial.html'});
+			when('/1',{template:'partial.html'});			
 	});
 function MainCtrl($scope){
 	
