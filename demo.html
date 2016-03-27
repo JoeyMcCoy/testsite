@@ -1,0 +1,87 @@
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style type="text/css">
+	body {
+		background: #222;
+		margin: 0;
+	}
+	.thumbnails img {
+		height: 80px;
+		border: 4px solid #555;
+		padding: 1px;
+		margin: 0 10px 10px 0;
+		border-radius: 10px;
+	}
+
+	.thumbnails img:hover {
+		border: 4px solid #00ccff;
+		cursor:pointer;
+	}
+
+	.preview img, sp {
+		border: 4px solid #444;
+		padding: 1px;
+		width: 700px;
+		height: 480px;
+		border-radius: 20px;
+	}
+</style>
+</head>
+<body>
+<div id="slider-wrapper">
+<div id="slider" class="gallery" align="center">
+<div class="thumbnails">
+	<img onmouseover="preview.src=img1.src" name="img1" src="DesignHeroes/Design heros spread Moc.jpg" alt="" />
+	<img onmouseover="preview.src=img2.src" name="img2" src="DesignHeroes/Design Heroes Ipad MOC AD.jpg" alt="" />
+	<img onmouseover="preview.src=img3.src" name="img3" src="DesignHeroes/Design Heroes Ipad MOC CC.jpg" alt="" />
+	<img onmouseover="preview.src=img4.src" name="img4" src="DesignHeroes/Design Heroes Ipad MOC TD.jpg" alt="" />
+	<img onmouseover="preview.src=img5.src" name="img5" src="DesignHeroes/Design Heroes Ipad MOC.jpg" alt="" />
+	<img onmouseover="preview.src=img6.src" name="img6" src="DesignHeroes/Design Heros Cover MOC.jpg" alt="" />
+	<img onmouseover="preview.src=img7.src" name="img7" src="DesignHeroes/Design heros spread Moc 2.jpg" alt="" />
+	<img onmouseover="preview.src=img8.src" name="img8" src="DesignHeroes/Design heros spread Moc 3.jpg" alt="" />
+</div>
+<div class="thumbnails">
+ <div class="sp">
+ <img onmouseover="preview.src=img1.src" name="img1" src="DesignHeroes/Design heros spread Moc.jpg" alt="" />
+ </div>
+  <div class="sp">
+ <img onmouseover="preview.src=img1.src" name="img1" src="DesignHeroes/Design Heroes Ipad MOC AD.jpg" alt="" />
+ </div>
+  <div class="sp">
+ <img onmouseover="preview.src=img1.src" name="img1" src="DesignHeroes/Design Heroes Ipad MOC CC.jpg" alt="" />
+ </div>
+  <div class="sp">
+ <img onmouseover="preview.src=img1.src" name="img1" src="DesignHeroes/Design Heroes Ipad MOC TD.jpg" alt="" />
+ </div>
+<div class="preview" align="center">
+	<img name="preview" src="DesignHeroes/Design heros spread Moc.jpg" alt=""/>
+</div>
+			<div id="button-previous">prev</div>
+            <div id="button-next">next</div>
+</div>
+</div><!-- Close the gallery div -->
+</div> <!-- Close the wrapper div -->
+</body>
+<script>
+$("#slider > div:gt(0)").hide();
+$("#button-next").click(function () {
+    $("#slider > div:first")
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .appendTo("#slider");
+});
+
+$("#slider > div:gt(0)").hide();
+$("#button-previous").click(function () {
+    $("#slider > div:last")
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .appendTo("#slider");
+});
+</script>
+
+</html>

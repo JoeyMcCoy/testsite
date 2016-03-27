@@ -14,7 +14,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+<link rel="stylesheet" href="wallop/css/example.css">
+  <link rel="stylesheet" href="wallop/css/wallop.css">
+  <link rel="stylesheet" href="wallop/css/wallop--fade.css">
 
 <style>
 body {
@@ -41,7 +43,7 @@ li {
 	
 }
 .active {
-border-radius: 15px;
+border-radius: 10px;
 border: 1px solid black;
 }
 li > a {
@@ -51,7 +53,7 @@ font-weight: 600;
 
 }
 li > a:hover {
-border-radius: 15px;
+border-radius: 10px;
 border: 1px solid black;
 background-color: #AFEEEE !important;
 color: black;
@@ -85,6 +87,15 @@ height: 45%;
 width: 55%;
 border-radius: 20px;
 }
+.Wallop-buttonPrevious a:hover, Wallop-buttonNext a:hover {
+border-radius: 15px;
+border: 1px solid black;
+background-color: #AFEEEE !important;
+color: black;
+}
+.Wallop-item > h5 {
+padding-left: 500px;
+}
 
 </style>
 
@@ -92,9 +103,7 @@ border-radius: 20px;
 
 </head>
 <body>
-<?php
-	$imagesTotal = 8;
-?>
+
 
 <div class="row">
 <div class="col-lg-1"></div>
@@ -110,27 +119,45 @@ border-radius: 20px;
 <div class="col-lg-1"></div>
 <ul style="padding-left: 45px;" class="nav nav-pills-small nav-stacked col-lg-2">
     <li><a class="active" href="#portfolio" data-toggle="tab">PORTFOLIO</a></li>
-    <li><a href="#resume" data-toggle="tab">RESUME</a></li>
-    <li><a href="#about" data-toggle="tab">ABOUT</a></li>
-	<li><a href="#contact" data-toggle="tab">CONTACT</a></li>
+    <li><a href="resume.html" data-toggle="tab">RESUME</a></li>
+    <li><a href="about.html" data-toggle="tab">ABOUT</a></li>
+	<li><a href="contact.html" data-toggle="tab">CONTACT</a></li>
 </ul>
 <div class="large-img col-lg-9">
-<img src="DesignHeroes/Design heros spread Moc.jpg">
+<div class="Container"> 
+    <!-- SLIDER STARTS -->
+    <div class="Wallop Wallop--fade">
+      <div class="Wallop-list">
+        <div class="Wallop-item"><img src="DesignHeroes/Design heros spread Moc.jpg"><h5>[1/8]</h5></div>
+        <div class="Wallop-item"><img src="DesignHeroes/Design Heroes Ipad MOC AD.jpg"><h5>[2/8]</h5></div>
+        <div class="Wallop-item"><img src="DesignHeroes/Design Heroes Ipad MOC CC.jpg"><h5>[3/8]</h5></div>
+        <div class="Wallop-item"><img src="DesignHeroes/Design Heroes Ipad MOC TD.jpg"><h5>[4/8]</h5></div>
+        <div class="Wallop-item"><img src="DesignHeroes/Design Heroes Ipad MOC.jpg"><h5>[5/8]</h5></div>
+		<div class="Wallop-item"><img src="DesignHeroes/Design Heros Cover MOC.jpg"><h5>[6/8]</h5></div>
+		<div class="Wallop-item"><img src="DesignHeroes/Design heros spread Moc 2.jpg"><h5>[7/8]</h5></div>
+		<div class="Wallop-item"><img src="DesignHeroes/Design heros spread Moc 3.jpg"><h5>[8/8]</h5></div>
+      </div>
+<div style="margin-top: -10px; padding-right: 440px; float: right;">
+<ul class="nav nav-pills-small nav-stacked">
+    <li style="width: 60px; float: right;"><a class="Wallop-buttonNext active navigation">&rarr;</a></li>
+	<li style="width: 60px; float: right;"><a class="Wallop-buttonPrevious active navigation">&larr;</a></li>
+	
+</ul>
+    <!-- SLIDER ENDS -->
+
+  </div>
+<div style="margin-top: -30px;"class="title-of">
 <h4>Book Forms</h4>
 <h2>Design Heroes</h2>
-<ul style="padding-right: 400px; margin-right: 40px;margin-top: -70px;" class="nav nav-pills-small nav-stacked">
-    <li style="width: 60px; float: right;"><a class="active navigation" href="#img2" data-toggle="tab">&rarr;</a></li>
-	<li style="width: 60px; float: right;"><a class="active navigation" href="#img1" data-toggle="tab">&larr;</a></li>
-	<p style="padding-right: 10px; float: right;">[1/8]</p>
-</ul>
+</div>
 </div>
 
 </div>
 <div class="row">
-<div class="col-lg-3"></div>
+
 <div class="text-pic col-lg-4">
 
-<p style="max-width:250px; padding-top: 25px;">Project completed for a Web Design course in which we
+<p style="padding-left: 8px; padding-top: 25px;">Project completed for a Web Design course in which we
  developed web materials for a fake, local outdoors company 
  located in Burlington, Vermont.</p>
 
@@ -142,14 +169,18 @@ border-radius: 20px;
 
 
 
-
 </div>
 
 
 
-
-
-
-
 </body>
+
+<script src="wallop/js/Wallop.js"></script>
+  <script>
+    // New instance of Wallop
+    var slider = document.querySelector('.Wallop');
+    var Wallop = new Wallop(slider);
+  </script>
+
+
 </html>
