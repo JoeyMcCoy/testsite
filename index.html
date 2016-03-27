@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html ng-app="portfolio">
+<html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
@@ -14,8 +15,8 @@
 <!-- jQuery  -->
 <script src="jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-<script type="text/javascript" src="app.js"></script>
+<title>Adam Nicol Design</title>
+</head>
 <style>
 body {
 background-image: url("header.png");
@@ -41,7 +42,7 @@ li {
 	
 }
 .active {
-border-radius: 20px;
+border-radius: 15px;
 border: 1px solid black;
 }
 li > a {
@@ -51,18 +52,21 @@ font-weight: 600;
 
 }
 li > a:hover {
-border-radius: 20px;
+border-radius: 15px;
 border: 1px solid black;
 background-color: #AFEEEE !important;
 color: black;
+}
+
+
 }
 @media only screen and (max-width: 500px) {
     body {
         margin: 15%;
     }
 }
-.thumbnail {
-border: transparent 0 none;
+.large-img {
+border: solid transparent;
 border-radius: 25px;
 }
 .text-pic{
@@ -72,68 +76,83 @@ h2 {
 font-size: 18px;
 font-weight: 800;
 }
+.thumbnail {
+border: transparent 0 none;
+border-radius: 25px;
+}
+
 h4 {
-font-size: 14px;
 font-weight: lighter;
+font-size: 18px; 
+color: black;
+}
+h5 {
 color: gray;
+}
+img {
+height: 45%; 
+width: 55%;
+border-radius: 20px;
 }
 
 </style>
 
-
-<head>
-<title>Adam Nicol Design</title>
-
-</head>
-<body ng-controller="MainCtrl">
+<body>
 
 <div class="row">
 <div class="col-lg-1"></div>
 <div class="col-lg-2">
-<img style="width: 160px; height: 180px; padding-top: 80px; padding-left: 60px;" src="logo.png">
+<img style="width: 140px; height: 140px; padding-bottom: 25px; padding-top: 50px; padding-left: 55px; padding-right: 15px;" src="logo.png">
 </div>
 <div class="col-lg-3">
-<h3 style="padding-top: 90px;">ADAM NICOL</h3>
+<h3 style="float: left; padding-top: 45px; margin-left: -10px;">ADAM NICOL</h3>
 </div>
 <div class="col-lg-6"></div>
 </div>	
-<div style="padding-top: 30px; width: 100%;" class="row">
+<div style="width: 100%;" class="row">
 <div class="col-lg-1"></div>
-<ul style="padding-left: 65px;" class="nav nav-pills-small nav-stacked col-lg-2">
-    <li style:><a class="active" href="#portfolio" data-toggle="tab">PORTFOLIO</a></li>
-    <li><a href="#resume" data-toggle="tab">RESUME</a></li>
-    <li><a href="#about" data-toggle="tab">ABOUT</a></li>
-	<li><a href="#contact" data-toggle="tab">CONTACT</a></li>
+<ul style="padding-left: 45px;" class="nav nav-pills-small nav-stacked col-lg-2">
+    <li><a class="active" href="index.html" data-toggle="tab">PORTFOLIO</a></li>
+    <li><a href="resume.html" data-toggle="tab">RESUME</a></li>
+    <li><a href="about.html" data-toggle="tab">ABOUT</a></li>
+	<li><a href="contact.html" data-toggle="tab">CONTACT</a></li>
 </ul>
 <div class="col-lg-2">
-<a ng-click="setRoute('1')"></a>
-<img class="thumbnail" style="height: 175px; width: 200px;" src="coffee.jpg">
+<a href="detail_alt.html">
+<img class="thumbnail" style="height: 175px; width: 200px;" src="DesignHeroes/Design heros spread Moc.jpg">
 </a>
 <div class="text-pic">
-<h4>Average Joe's Coffee</h4>
-<h2>Graphic Design</h2>
+<h4>Book Forms</h4>
+<h2>Design Heroes</h2>
 </div>
 </div>
 <div class="col-lg-2">
 <a href="detail_alt.html">
-<img class="thumbnail" style="height: 175px; width: 200px;" src="coffee.jpg">
+<img class="thumbnail" style="height: 175px; width: 200px;" src="NotchNeedle/Ipad moc_home and check out.jpg">
 </a>
 <div class="text-pic">
-<h4>Average Joe's Coffee</h4>
-<h2>Graphic Design</h2>
+<h4>Web Design</h4>
+<h2>Notch & Needle</h2>
 </div>
 </div>
 <div class="col-lg-2">
 <a href="detail_alt.html">
-<img class="thumbnail" style="height: 175px; width: 200px;" src="coffee.jpg">
+<img class="thumbnail" style="height: 175px; width: 200px;" src="Transamerica/TRANSAMERICA MOC UP.jpg">
 </a>
 <div class="text-pic">
-<h4>Average Joe's Coffee</h4>
-<h2>Graphic Design</h2>
+<h4>Identity Systems</h4>
+<h2>TransAmerica</h2>
 </div>
 </div>
 <div class="col-lg-3"></div>
 </div>
+
+
+
+
+
+
+
 
 </body>
 </html>
