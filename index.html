@@ -9,7 +9,6 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!-- jQuery  -->
@@ -19,7 +18,7 @@
 </head>
 <style>
 body {
-background-image: url("header.png");
+background-image: url("header.PNG");
 background-repeat: repeat-x;
 font-family: 'Futura', Arial, sans-serif;
 }
@@ -59,12 +58,19 @@ color: black;
 }
 
 
+
+@media only screen and (max-width: 768px) {
+    .adam-name {
+	margin-top: -20px;
+	padding-left: 6%;
+	padding-bottom: 10px;
+	}
+	body {		
+	width: 200px;
+    margin: 0 auto;
+	}	
 }
-@media only screen and (max-width: 500px) {
-    body {
-        margin: 15%;
-    }
-}
+
 .large-img {
 border: solid transparent;
 border-radius: 25px;
@@ -105,7 +111,7 @@ border-radius: 20px;
 <img style="width: 140px; height: 140px; padding-bottom: 25px; padding-top: 50px; padding-left: 55px; padding-right: 15px;" src="logo.png">
 </div>
 <div class="col-lg-3">
-<h3 style="float: left; padding-top: 45px; margin-left: -10px;">ADAM NICOL</h3>
+<h3 class="adam-name" style="float: left; padding-top: 45px; margin-left: -10px;">ADAM NICOL</h3>
 </div>
 <div class="col-lg-6"></div>
 </div>	
