@@ -19,15 +19,91 @@
 <link rel="stylesheet" href="wallop/css/wallop--fade.css">
 
 <title>Adam Nicol Design</title>
+<style>
+@media only screen and (max-width: 768px) {
+    .logo {
+		padding-left: 1%;
+		width: 200px;
+    margin: 0 auto;
+	}
+	.adam-name {
+	margin-top: -20px;
+	padding-left: 7%;
+	padding-bottom: 10px;
+	width: 250px;
+    margin: 0 auto;
+	}
+	.navtabs {
+	text-align: center;
+	padding-left: 2%;
+	width: 210px;
+    margin: 0 auto;
+	}
+	.Wallop-item > img {
+	height: 100%;
+	width: 100%;
+	display: block;
+    margin: 0 auto;	
+	}
+	.title-of {
+	text-align: center;
+	}
+	h4 {
+	font-size: 24px;
+	}
+	h2 {
+	font-size: 36px;
+	}
+	.Wallop-buttonPrevious, .Wallop-buttonNext  {
+	font-size: 10px;
+	
+	width: 50px;
+	
+	height: 40px;
+	float: right;
+	text-align: center;	
+	
+	}
+	
+}
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+.logo {
+		padding-left: 4%;
+		width: 210px;
+		
+	}
+	.adam-name {
+	margin-top: -20px;
+	padding-left: 10%;
+	padding-bottom: 10px;
+	width: 210px;
+	margin: 0 auto;
+	}
+	.navtabs {
+	text-align: center;
+	padding-left: 5%;
+	width: 210px;
+	margin: 0 auto;
+	}
+	body {		
+	
+   
+	}	
+}
+
+</style>
 </head>
 <body>
-
-
 <div class="row">
 <div class="col-lg-1"></div>
 <div class="col-lg-2">
+<div class="logo">
 <img style="width: 140px; height: 140px; padding-bottom: 25px; padding-top: 50px; padding-left: 55px; padding-right: 15px;" src="logo.png">
+</div>
 </div>
 <div class="col-lg-3">
 <h3 class="adam-name" style="padding-top: 45px;">ADAM NICOL</h3>
@@ -36,12 +112,14 @@
 </div>	
 <div style="width: 100%;" class="row">
 <div class="col-lg-1"></div>
+<div class="navtabs">
 <ul style="padding-left: 45px;" class="nav nav-pills-small nav-stacked col-lg-2">
     <li><a class="active" href="#portfolio" data-toggle="tab">PORTFOLIO</a></li>
     <li><a href="resume.html" data-toggle="tab">RESUME</a></li>
     <li><a href="about.html" data-toggle="tab">ABOUT</a></li>
 	<li><a href="contact.html" data-toggle="tab">CONTACT</a></li>
 </ul>
+</div>
 <div class="large-img col-lg-9">
 <div class="Container"> 
     <!-- SLIDER STARTS -->
@@ -57,11 +135,13 @@
 		<div class="Wallop-item"><img src="DesignHeroes/Design heros spread Moc 3.jpg"><h5>[8/8]</h5></div>
       </div>
 <div style="margin-top: -10px; padding-right: 440px; float: right;">
+<div class="nav_arrows">
 <ul class="nav nav-pills-small nav-stacked">
     <li style="width: 60px; float: right;"><a class="Wallop-buttonNext active navigation">&rarr;</a></li>
 	<li style="width: 60px; float: right;"><a class="Wallop-buttonPrevious active navigation">&larr;</a></li>
 	
 </ul>
+</div>
     <!-- SLIDER ENDS -->
 
   </div>

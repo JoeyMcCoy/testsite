@@ -1,11 +1,39 @@
 @media only screen and (max-width: 768px) {
-    .adam-name {
+    .logo {
+		padding-left: 4%;
+	}
+	.adam-name {
 	margin-top: -20px;
-	padding-left: 6%;
+	padding-left: 10%;
 	padding-bottom: 10px;
 	}
+	.navtabs {
+	text-align: center;
+	padding-left: 5%;
+	}
 	body {		
-	width: 200px;
+	width: 210px;
+    margin: 0 auto;
+	}	
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+.logo {
+		padding-left: 4%;
+	}
+	.adam-name {
+	margin-top: -20px;
+	padding-left: 10%;
+	padding-bottom: 10px;
+	}
+	.navtabs {
+	text-align: center;
+	padding-left: 5%;
+	}
+	body {		
+	width: 210px;
     margin: 0 auto;
 	}	
 }

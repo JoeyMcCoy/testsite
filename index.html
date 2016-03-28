@@ -60,13 +60,41 @@ color: black;
 
 
 @media only screen and (max-width: 768px) {
-    .adam-name {
+    .logo {
+		padding-left: 4%;
+	}
+	.adam-name {
 	margin-top: -20px;
-	padding-left: 6%;
+	padding-left: 10%;
 	padding-bottom: 10px;
 	}
+	.navtabs {
+	text-align: center;
+	padding-left: 5%;
+	}
 	body {		
-	width: 200px;
+	width: 210px;
+    margin: 0 auto;
+	}	
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+.logo {
+		padding-left: 4%;
+	}
+	.adam-name {
+	margin-top: -20px;
+	padding-left: 10%;
+	padding-bottom: 10px;
+	}
+	.navtabs {
+	text-align: center;
+	padding-left: 5%;
+	}
+	body {		
+	width: 210px;
     margin: 0 auto;
 	}	
 }
@@ -108,7 +136,9 @@ border-radius: 20px;
 <div class="row">
 <div class="col-lg-1"></div>
 <div class="col-lg-2">
+<div class="logo">
 <img style="width: 140px; height: 140px; padding-bottom: 25px; padding-top: 50px; padding-left: 55px; padding-right: 15px;" src="logo.png">
+</div>
 </div>
 <div class="col-lg-3">
 <h3 class="adam-name" style="float: left; padding-top: 45px; margin-left: -10px;">ADAM NICOL</h3>
@@ -117,12 +147,14 @@ border-radius: 20px;
 </div>	
 <div style="width: 100%;" class="row">
 <div class="col-lg-1"></div>
+<div class="navtabs">
 <ul style="padding-left: 45px;" class="nav nav-pills-small nav-stacked col-lg-2">
     <li><a class="active" href="index.html" data-toggle="tab">PORTFOLIO</a></li>
     <li><a href="resume.html" data-toggle="tab">RESUME</a></li>
     <li><a href="about.html" data-toggle="tab">ABOUT</a></li>
 	<li><a href="contact.html" data-toggle="tab">CONTACT</a></li>
 </ul>
+</div>
 <div class="col-lg-2">
 <a href="designheroes.html">
 <img class="thumbnail" style="height: 175px; width: 200px;" src="DesignHeroes/Design heros spread Moc.jpg">
