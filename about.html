@@ -15,6 +15,33 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style>
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio: 1){
+.about {
+
+width: 600px;
+margin-left: -160px;
+}
+.aboutme { padding-left: 190px;}
+
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation: portrait;){
+.about {
+
+width: 600px;
+margin-left: -270px;
+}
+.aboutme { padding-left: 300px;}
+
+}
+}
+</style>
 <title>Adam Nicol Design</title>
 </head>
 <body>
@@ -40,8 +67,9 @@
 	<li><a href="contact.html" data-toggle="tab">CONTACT</a></li>
 </ul>
 </div>
+<div class="about">
 <div class="col-lg-8">
-<h3>About me</h3>
+<h3 class="aboutme">About me</h3>
 <p>An inventory manager should be compensated for keeping as little inventory as possible.
 A purchasing manager buys in bulk to get lowest price per unit.
 These two activities create dissonance. An inventory manager should be compensated for keeping as little inventory as possible.
@@ -69,6 +97,7 @@ A purchasing manager buys in bulk to get lowest price per unit.
 These two activities create dissonance. An inventory manager should be compensated for keeping as little inventory as possible.
 A purchasing manager buys in bulk to get lowest price per unit.
 These two activities create dissonance.</p>
+</div>
 </div>
 <div class="col-lg-1"></div>
 </div>

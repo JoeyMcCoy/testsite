@@ -27,11 +27,13 @@
 	}
 	.adam-name {
 	margin-top: -20px;
-	
 	padding-bottom: 10px;
 	text-align: center;
 	width: 210px;
 	margin: 0 auto;
+	}
+	h5 {
+	padding-left: 200px;
 	}
 	.navtabs {
 	text-align: center;
@@ -75,30 +77,75 @@
 	
 	
 }
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+h4{
+text-align: center;
+padding-left: 24px;
+}
+.logo {
+padding-left: 36%;
+}
+.Wallop-item > img {
+    margin: 0 auto;	
+	padding-right: 1%;
+	}
+
+}
 
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
-and (orientation : landscape) { 
-.logo {
-		padding-left: 4%;
-		
-		
+and (-webkit-min-device-pixel-ratio: 1) { 
+.adjustlogo {
+		padding-left: 50px;
+	}
+	.title-of {
+	padding-left: 200px;
+	}
+	p {
+	position: absolute;
+	left: 210px;
+	}
+	.backbutton {
+	padding-top: 70px;
+	text-align: center;
+	width: 225px;
+    margin: 0 auto;
 	}
 	.adam-name {
 	margin-top: -20px;
-	padding-left: 10%;
+	float: left;
+	padding-left: 1%;
 	padding-bottom: 10px;
 	width: 210px;
 	margin: 0 auto;
 	}
+	.Wallop-buttonPrevious, .Wallop-buttonNext {
+	font-size: 10px;	
+	width: 50px;
+	left: 440px;
+	height: 40px;	
+	text-align: center;		
+	}
+	
 	.navtabs {
-	text-align: center;
-	padding-left: 5%;
+	float: left;
+	
 	width: 210px;
 	margin: 0 auto;
 	}
-	
+	.Wallop-item > img {
+	left: 100px;
+	}
+	.Wallop-item > img {
+	height: 90%;
+	width: 100%;
+	display: block;
+    margin: 0 auto;	
+	}
 }
 
 </style>
@@ -108,7 +155,7 @@ and (orientation : landscape) {
 <div class="col-lg-1"></div>
 <div class="col-lg-2">
 <div class="logo">
-<img style="width: 140px; height: 140px; padding-bottom: 25px; padding-top: 50px; padding-left: 55px; padding-right: 15px;" src="logo.png">
+<img class="adjustlogo" style="width: 140px; height: 140px; padding-bottom: 25px; padding-top: 50px; padding-left: 55px; padding-right: 15px;" src="logo.png">
 </div>
 </div>
 <div class="col-lg-3">
