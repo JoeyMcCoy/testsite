@@ -2,9 +2,9 @@ body {
 background-image: url("header.PNG");
 background-repeat: repeat-x;
 font-family: 'Futura', Arial, sans-serif;
+-webkit-font-smoothing: antialiased;
 }
 h3 {
-font-family: 'Futura', Arial, sans-serif;
 font-weight: 900;
 font-size: 25px;
 }
@@ -28,6 +28,7 @@ border: 1px solid black;
 li > a {
 color: black;
 font-family: 'Futura', Arial, sans-serif;
+-webkit-font-smoothing: antialiased;
 font-weight: 600;
 
 }
