@@ -1,11 +1,10 @@
 body {
 background-image: url("header.PNG");
 background-repeat: repeat-x;
-font-family: 'Futura', Arial, sans-serif;
--webkit-font-smoothing: antialiased;
+font-family: 'Open Sans', sans-serif;
 }
 h3 {
-font-weight: 900;
+font-weight: 800;
 font-size: 25px;
 }
 li {
@@ -27,8 +26,7 @@ border: 1px solid black;
 }
 li > a {
 color: black;
-font-family: 'Futura', Arial, sans-serif;
--webkit-font-smoothing: antialiased;
+font-family: 'Open Sans', sans-serif;
 font-weight: 600;
 
 }
@@ -42,9 +40,7 @@ color: black;
 
 }
 @media only screen and (max-width: 500px) {
-    body {
-        
-    }
+   
 }
 .large-img {
 border: solid transparent;
