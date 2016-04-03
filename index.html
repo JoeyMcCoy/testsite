@@ -19,45 +19,51 @@
 </head>
 <style>
 body {
-background-image: url("header.PNG");
-background-repeat: repeat-x;
 font-family: 'Open Sans', sans-serif;
+ background-image: url("header.PNG");
+ background-repeat: repeat-x;
+ 
 }
 h3 {
 font-weight: 800;
-font-size: 25px;
+font-size: 27px;
+letter-spacing: 1px;
 }
 li {
     list-style-position:inside;
    
 	text-align: left;
 	font-family: Impact;
-	
+	font-size: 14px;
 	height: 35px;
 	width: 120px;
 	color: black;
 	margin-bottom: 10px;
 	padding: 5px;
+	padding-left: 3px;	
 	
 }
+.nav>li>a {
+  padding: 8px 14px;
+}
+
 .active {
-border-radius: 10px;
-border: 1px solid black;
+border-radius: 20px;
+border: 0.5px solid black;
+font-weight: bold;
 }
 li > a {
 color: black;
 font-family: 'Open Sans', sans-serif;
-font-weight: 600;
+font-weight: 400;
 
 }
 li > a:hover {
-border-radius: 10px;
-border: 1px solid black;
-background-color: #AFEEEE !important;
+border-radius: 20px;
+border: 0.5px solid black;
+background-color: #CCFFCC !important;
 color: black;
 }
-
-
 
 @media only screen and (max-width: 768px) {
     .logo {
@@ -110,18 +116,24 @@ border-radius: 25px;
 padding-left: 10px;
 }
 h2 {
-font-size: 18px;
 font-weight: 800;
+font-size: 18px;
+margin-top: -2px;
+padding-bottom: 20px;	
 }
 .thumbnail {
-border: transparent 0 none;
+border: none;
 border-radius: 25px;
+}
+h4, h2 {
+padding-left: 6px;
 }
 
 h4 {
 font-weight: lighter;
-font-size: 18px; 
 color: black;
+font-size: 9px;
+margin-top: -2px;
 }
 h5 {
 color: gray;
@@ -129,29 +141,28 @@ color: gray;
 img {
 height: 45%; 
 width: 55%;
-border-radius: 20px;
+border-radius: 20px; 
 }
 
 </style>
 
 <body>
-
 <div class="row">
 <div class="col-lg-1"></div>
-<div class="col-lg-2">
-<div class="logo">
-<img style="width: 140px; height: 140px; padding-bottom: 25px; padding-top: 50px; padding-left: 55px; padding-right: 15px;" src="logo.png">
-</div>
-</div>
 <div class="col-lg-3">
+<div style="float: right; padding-right: 122px;"class="logo">
+<img style="width: 140px; height: 140px; padding-bottom: 25px; padding-top: 50px; padding-left: 55px; padding-right: 20px;" src="logo.png">
+</div>
+</div>
+<div style="float: left; margin-left: -105px;"class="col-lg-3">
 <h3 class="adam-name" style="float: left; padding-top: 45px; margin-left: -10px;">ADAM NICOL</h3>
 </div>
-<div class="col-lg-6"></div>
+<div class="col-lg-5"></div>
 </div>	
 <div style="width: 100%;" class="row">
 <div class="col-lg-1"></div>
 <div class="navtabs">
-<ul style="padding-left: 45px;" class="nav nav-pills-small nav-stacked col-lg-2">
+<ul style="padding-left: 100px;" class="nav nav-pills-small nav-stacked col-lg-2">
     <li><a class="active" href="index.html" data-toggle="tab">PORTFOLIO</a></li>
     <li><a href="resume.html" data-toggle="tab">RESUME</a></li>
     <li><a href="about.html" data-toggle="tab">ABOUT</a></li>
@@ -160,28 +171,28 @@ border-radius: 20px;
 </div>
 <div class="col-lg-2">
 <a href="designheroes.html">
-<img class="thumbnail" style="height: 175px; width: 200px;" src="DesignHeroes/Design heros spread Moc.jpg">
+<img class="thumbnail" style="height: 175px; width: 210px;" src="DesignHeroes/DESIGN HEROES THUMB.jpg">
 </a>
 <div class="text-pic">
-<h4>Book Forms</h4>
+<h4>BOOK FORMS</h4>
 <h2>Design Heroes</h2>
 </div>
 </div>
 <div class="col-lg-2">
 <a href="notchneedle.html">
-<img class="thumbnail" style="height: 175px; width: 200px;" src="NotchNeedle/Ipad moc_home and check out.jpg">
+<img class="thumbnail" style="height: 175px; width: 210px;" src="NotchNeedle/Ipad moc_home and check out.jpg">
 </a>
 <div class="text-pic">
-<h4>Web Design</h4>
+<h4>WEB DESIGN</h4>
 <h2>Notch & Needle</h2>
 </div>
 </div>
 <div class="col-lg-2">
 <a href="transamerica.html">
-<img class="thumbnail" style="height: 175px; width: 200px;" src="Transamerica/TRANSAMERICA MOC UP.jpg">
+<img class="thumbnail" style="height: 175px; width: 210px; border: 1px solid #C1CDCD;" src="Transamerica/TA THUMB.jpg">
 </a>
 <div class="text-pic">
-<h4>Identity Systems</h4>
+<h4>IDENTITY SYSTEMS</h4>
 <h2>TransAmerica</h2>
 </div>
 </div>
@@ -191,29 +202,29 @@ border-radius: 20px;
 <div class="col-lg-3"></div>
 <div class="col-lg-2">
 <a href="averagejoe.html">
-<img class="thumbnail" style="height: 175px; width: 200px;" src="NotYourAverageJoe/Final Coffee Color 2.jpg">
+<img class="thumbnail" style="height: 175px; width: 210px;" src="NotYourAverageJoe/NOT YOUR AVERAGE JOE THUMB.jpg">
 </a>
 <div class="text-pic">
-<h4>Subtitle</h4>
+<h4>PACKAGING</h4>
 <h2>Not Your Average Joe</h2>
 </div>
 </div>
 <div class="col-lg-2">
 <a href="adidasshoebox.html">
-<img class="thumbnail" style="height: 175px; width: 200px;" src="AdidasShoeBox/Page 1.jpg">
+<img class="thumbnail" style="height: 175px; width: 210px;" src="AdidasShoeBox/Page 1.jpg">
 </a>
 <div class="text-pic">
-<h4>2nd Life Packaging</h4>
-<h2>Adidas Shoe Box</h2>
+<h4>INDUSTRIAL DESIGN</h4>
+<h2>Adidas Shoebox</h2>
 </div>
 </div>
 <div class="col-lg-2">
 <a href="photography.html">
-<img class="thumbnail" style="height: 175px; width: 200px;" src="PhotoPortfolio/G0G2883.jpg">
+<img class="thumbnail" style="height: 175px; width: 210px;" src="PhotoPortfolio/UOFL Athletics Thumb.jpg">
 </a>
 <div class="text-pic">
-<h4>Photography</h4>
-<h2>Main Title</h2>
+<h4>PHOTOGRAPHY</h4>
+<h2>University of Louisville Athletics</h2>
 </div>
 </div>
 <div class="col-lg-3"></div>
@@ -222,11 +233,11 @@ border-radius: 20px;
 <div class="col-lg-3"></div>
 <div class="col-lg-2">
 <a href="runway.html">
-<img class="thumbnail" style="height: 175px; width: 200px;" src="RunwayTypeFace/RAY_RUNWAY_POSTER.jpg">
+<img class="thumbnail" style="height: 175px; width: 210px;" src="RunwayTypeFace/RUNWAY THUMB.jpg">
 </a>
 <div class="text-pic">
-<h4>Runway Type Face</h4>
-<h2>Main Title</h2>
+<h4>TYPEFACE DESIGN</h4>
+<h2>Runway Typeface</h2>
 </div>
 </div>
 </div>
