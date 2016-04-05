@@ -3,21 +3,22 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (-webkit-min-device-pixel-ratio: 1) { 
 	.logo {
-	margin-left: -12%;
+	margin-left: -14%;
 	}
 	.title-of {
 	padding-left: 200px;
 	}
 	p {
-	position: absolute;
-	left: 210px;
+	margin-top: -20px;
+	left: 310px;
+	margin-left: 20%;
+	width: 805px;
 	}
 	.backbutton {
-	padding-top: 70px;
+	margin-top: 50px;
 	text-align: center;
-	width: 225px;
-    margin: 0 auto;
-	padding-right: 580px;
+	width: 325px;
+	margin-left: 20%;
 	}
 	.adam-name {
 	margin-top: -20px;
@@ -57,35 +58,37 @@ and (-webkit-min-device-pixel-ratio: 1) {
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1)  { 
 	.logo {
-	margin-left: -160%;
+	margin-left: -16%;
 	}
 	.adam-name {
-	margin-top: -20px;
-	float: left;
-	
+	margin-top: -10px;
+	float: left;	
 	padding-bottom: 10px;
-	width: 20px;
+	width: 200px;
 	margin-left: -300px;
+	padding-left: 2%;
 	}
 	.title-of {
-	padding-left: 80px;
+	padding-left: 200px;
 	}
 	p {
-	position: absolute;
-	left: 140px;
+	margin-top: -20px;
+	left: 210px;
+	margin-right: -20%;
+	width: 400px;
+	
 	}
 	.backbutton {
-	padding-top: 70px;
+	margin-top: 50px;
 	text-align: center;
 	width: 225px;
-    margin: 0 auto;
-	padding-right: 480px;
+    
 	}
 	
 	.Wallop-buttonPrevious, .Wallop-buttonNext {
 	font-size: 10px;	
 	width: 50px;
-	left: 300px;
+	left: 440px;
 	height: 40px;	
 	text-align: center;		
 	}
