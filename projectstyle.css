@@ -5,7 +5,7 @@ font-family: 'Open Sans', sans-serif;
 }
 h3 {
 font-weight: 800;
-font-size: 27px;
+font-size: 22px;
 letter-spacing: 1px;
 }
 .navtabs>.nav>li>a {
@@ -31,7 +31,7 @@ li {
    
 	text-align: left;
 	font-family: Impact;
-	
+	font-size: 12px;
 	height: 35px;
 	width: 120px;
 	color: black;
@@ -53,7 +53,7 @@ font-weight: bold;
 li > a {
 color: black;
 font-family: 'Open Sans', sans-serif;
-font-weight: 600;
+font-weight: 400;
 
 }
 li > a:hover {
@@ -65,11 +65,7 @@ color: black;
 
 
 }
-@media only screen and (max-width: 500px) {
-    body {
-        margin: 15%;
-    }
-}
+
 .large-img {
 border: solid transparent;
 border-radius: 25px;
