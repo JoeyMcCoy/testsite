@@ -9,7 +9,8 @@ font-size: 22px;
 letter-spacing: 1px;
 }
 li {
-    list-style-position:inside;  
+    list-style-position:inside;
+   
 	text-align: left;
 	font-family: Impact;
 	font-size: 12px;
@@ -17,12 +18,16 @@ li {
 	width: 120px;
 	color: black;
 	margin-bottom: 10px;
-	padding: 5px;
+	
 	
 }
+.nav>li>a {
+  padding: 8px 14px;
+}
+
 .active {
-border-radius: 15px;
-border: 1px solid black;
+border-radius: 20px;
+border: 0.5px solid black;
 font-weight: bold;
 }
 li > a {
@@ -32,12 +37,11 @@ font-weight: 400;
 
 }
 li > a:hover {
-border-radius: 15px;
-border: 1px solid black;
-background-color: #AFEEEE !important;
+border-radius: 20px;
+border: 0.5px solid black;
+background-color: #CCFFCC !important;
 color: black;
 }
-
 
 }
 @media only screen and (max-width: 500px) {
