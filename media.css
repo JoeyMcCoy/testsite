@@ -17,13 +17,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	.backbutton {
 	margin-top: 50px;
 	text-align: center;
-	width: 405px;
-	margin-left: 27%;
+	width: 205px;
+	margin-left: 20%;
 	}
 	.adam-name {
 	margin-top: -20px;
 	float: left;
-	padding-left: 1%;
+	padding-left: 2%;
 	padding-bottom: 10px;
 	width: 210px;
 	margin: 0 auto;
@@ -58,15 +58,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1)  { 
 	.logo {
-	margin-left: -16%;
+	margin-left: -15%;
 	}
-	.adam-name {
-	margin-top: -10px;
-	float: left;	
-	padding-bottom: 10px;
-	width: 200px;
-	margin-left: -300px;
-	padding-left: 2%;
+	.adam-name{
+	padding-left: 20px;
 	}
 	.title-of {
 	padding-left: 200px;
@@ -81,7 +76,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	.backbutton {
 	margin-top: 50px;
 	text-align: center;
-	width: 405px;
+	width: 305px;
+	padding-left: 200px;
 	margin-left: 27%;
     
 	}
