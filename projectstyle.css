@@ -9,7 +9,7 @@ font-size: 22px;
 letter-spacing: 1px;
 }
 .navtabs>.nav>li>a {
-  padding: 6px 20px;
+  padding: 6px 22px;
 }
 h4 {
 font-size: 12px;
@@ -17,7 +17,7 @@ font-size: 12px;
 h4, h2 {
 padding-left: 15px;
 }
-p {padding-left: 20px; padding-top: 25px;}
+p {padding-left: 20px; padding-top: 25px; font-size: 12px;}
 .Wallop-item > h5 {
 padding-bottom: 4px;
 }
