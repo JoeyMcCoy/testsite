@@ -11,9 +11,7 @@ letter-spacing: 1px;
 .navtabs>.nav>li>a {
   padding: 6px 22px;
 }
-h4 {
-font-size: 12px;
-}
+
 h4, h2 {
 padding-left: 15px;
 }
@@ -74,11 +72,11 @@ border-radius: 25px;
 padding-left: 10px;
 }
 h2 {
-font-size: 18px;
+font-size: 14px;
 font-weight: 800;
 }
 h4 {
-font-size: 14px;
+font-size: 12px;
 font-weight: lighter;
 color: gray;
 }
